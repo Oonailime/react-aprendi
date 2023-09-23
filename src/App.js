@@ -9,7 +9,7 @@ class App extends Component {
     this.setState(
       {
         alunos:alunos.filter((aluno,i)=>{
-          return i!= index
+          return i!== index
         })
       }
     )
@@ -34,7 +34,7 @@ class App extends Component {
         <Table alunos = {alunos}
         removerAluno={this.removerAluno}/>
         <Form handleSubmit={this.handleSubmit}/>
-        
+
       </div>
     );
   }  
