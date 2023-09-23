@@ -34,6 +34,7 @@ class App extends Component {
         <Table alunos = {alunos}
         removerAluno={this.removerAluno}/>
         <Form handleSubmit={this.handleSubmit}/>
+        
       </div>
     );
   }  
